@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+    /*
+        #  = id
+        .  = class
+        :  = pseudo-classe
+        :: = pseudo-element
+        >  = clildren
+    */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a { /*link*/
+            color: red; /* muda a cor do link*/
+            text-decoration: none; /* tira o sublinhado dos links*/
+            font-weight: bold; /* links em negrito*/
+        }
+
+        a:visited { /* link visitado*/
+             color: darkred; /* cor do link que já foi visitado*/
+        }
+
+        a:hover { /* link sublinhado */
+            text-decoration: underline; /* fica sublinhado quando passa o mouse por cima*/
+            color: blue; /* muda a cor quando passa o mouse em cima */
+        }
+
+        a:active { /*link ativo*/
+            color: gold; /* muda a quando clica no link*/
+        }
+        
+        .especial::before { /*indicação de link*/
+            content: ' ⇨ '; /* palavra ou imagem antes do link*/
+            color: red;
+        }
+
+        .especial {
+            background-color:rgb(255, 138, 138); /* cor da faixa*/
+        }
+
+        .especial::after { /* indicação de link*/
+            content: ' ⇦ '; /* palavra ou imagem depois do link*/
+            color: red; /* cor do link*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando os links</h1>
+    <ul>
+        <li><a href="https://gustavo.guanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/"  target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank  ">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

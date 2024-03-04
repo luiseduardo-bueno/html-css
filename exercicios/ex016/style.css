@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #D8B08C, #FFCB9A);
+}
+
+main { 
+    background-color: white; /* Cor do quadro */
+    border-radius: 10px; /* Arredondar a borda do quadro*/
+    box-shadow: 5px 5px 5px rgb(136, 109, 93, 0.616); /* Cor e largura da sombra do quadro */
+    width: 600px; /* Tamanho do quadro branco */
+    padding: 10px; /* Almentar as laterais em branco do quadro */
+    margin: auto; /* Quadro fica centralizado na tela qnd meche nela */
+}
+
+h1 {
+    color: #0f6566e3;
+    text-align: center; /* Centralizar o texto */
+    text-shadow: 1px 1px 2px #093b3c94; /* Cor e tamanho da sombra do título */
+}
+
+h2 {
+    color: #826852ec
+}
+
+p {
+    text-align: justify; 
+}
